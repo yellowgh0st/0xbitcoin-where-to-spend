@@ -101,7 +101,7 @@
 
 .hero-pic {
   width: 205px;
-  hieght: auto;
+  height: auto;
 }
 
 .section.hero.autospacing {
@@ -136,6 +136,10 @@
 .list-item {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.slide-nav {
+  display: none;
 }
 
 .paragraph {
@@ -208,16 +212,6 @@
   font-size: 1.25em;
   line-height: 1.25em;
   font-weight: 400;
-}
-
-.slide-nav {
-  left: auto;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
-  display: block;
-  margin-top: 20px;
-  margin-right: 20px;
 }
 
 .cta.heading {
@@ -381,14 +375,18 @@
   padding: 2.3% 0;
 }
 
-.store-item h3 {
-  margin-top: 5px;
-}
-
 .store-item .item-image {
   width: 300px;
   height: 300px;
   object-fit: cover;
+}
+
+.store-item h3 {
+  margin-top: 5px;
+}
+
+.storem-item .item-author {
+  font-size: 14px;
 }
 
 .container {
@@ -810,6 +808,9 @@
     background-position: 50% 50%, 50% 50%;
     background-size: 450px, 400px;
   }
+  .slide-nav {
+    display: block;
+  }
   .paragraph {
     margin-top: 1em;
     text-align: center;
@@ -825,12 +826,21 @@
     width: 80%;
     text-align: center;
   }
-  .slide-nav {
-    margin-top: 10px;
-  }
+
   .cta.heading {
     margin-bottom: 10px;
   }
+
+  .store-item {
+    margin: 0 auto;
+    height: auto;
+    width: 300px;
+  }
+
+  .store-item.mid {
+    padding: 37px 0;
+  }
+
   .column {
     padding-top: 5%;
   }
